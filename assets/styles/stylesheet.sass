@@ -1,0 +1,91 @@
+@use "sass:color"
+
+@import url('tailwind.css')
+
+@keyframes rotate
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+
+body
+  @apply flex lg:block
+  background: #141315
+  font-size: 16px
+  color: hsl(360, 0%, 92%, 1)
+  nav
+    width: 100%
+    position: fixed
+    display: grid
+    grid: auto / 1fr 1fr
+    padding: 1rem
+    background: #141315
+    text-transform: lowercase
+    ul
+      display: flex
+      gap: 1rem
+      font-weight: bold
+      color: #EC77A8
+      &:nth-child(3)
+        place-self: end
+      a
+        color: #525AA8
+        transition: 0.5s ease
+        &:hover
+          color: color.adjust(#525AA8, $lightness: 10%)
+  footer
+    grid: auto / 1fr
+    position: fixed
+    place-self: end
+    padding: 1rem
+    bottom: 0
+    right: 0
+  .container
+    .rb-1
+      > div > svg
+        top:40%
+        left: -5px
+        display: block!important
+    .rb-2
+      > a > svg
+        display: block!important
+        top: 25%
+        left: 4%
+        transform: rotate(80deg) scale(300%)
+    .rb-3
+      > div > svg 
+        bottom:20%
+        left: 7%
+        display: block!important
+    .rb-4
+      > a > svg
+        display: block!important
+        bottom: 25%
+        right: 4%
+        transform: rotate(80deg) scale(300%)
+    .rb-5
+      > div > svg 
+        top: 38%
+        right: -10px
+        display: block!important
+
+    .round-border
+      position: relative
+      /*animation: 120s infinite rotate*/
+      svg
+        position: absolute
+        transform: scale(300%) rotate(20deg)
+        width: 25px
+    > div > .round-border
+      grid-area: 1/1/2/2
+    h1
+      font: clamp(32px, 3vw, 64px)/1.25em tan-buster
+      text-transform: uppercase
+      color: #EC77A8
+      &.body
+        padding: 2rem 1rem 0
+        margin: auto
+        word-break: break-all
+        place-self: center
+        grid-area: 1/1/2/2
+        width: 35%
