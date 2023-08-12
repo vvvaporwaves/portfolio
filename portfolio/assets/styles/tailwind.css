@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bg-zinc-950 {
+        background-color: rgb(9 9 11);
+    }
+
+    .text-zinc-950 {
+        color: rgb(9 9 11);
+    }
+
+    .border-zinc-950 {
+        border-color: rgb(9 9 11);
+    }
+
+    .round-border {
+        @apply rounded-full border border-white border-solid w-full p-16 aspect-square flex justify-center items-center
+    }
+
+    .last-rb {
+        padding: 0
+    }
+}
