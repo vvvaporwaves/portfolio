@@ -9,7 +9,14 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
-    'gatsby-plugin-postcss'
+    'gatsby-plugin-postcss',
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        // Configure SASS to process TailwindCSS.
+        postCssPlugins: [require('tailwindcss')],
+      },
+    }
   ],
 }
 
