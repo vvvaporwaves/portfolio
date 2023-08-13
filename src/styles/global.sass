@@ -1,3 +1,6 @@
+@use "sass:color"
+@use "fonts"
+
 @tailwind base
 @tailwind components
 @tailwind utilities
@@ -17,3 +20,8 @@
 
     .last-rb
         padding: 0
+
+    .nav-item
+        @apply transition duration-500 ease-out
+        &:hover
+            @apply transition duration-500 ease-in brightness-150
