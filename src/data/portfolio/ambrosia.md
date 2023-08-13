@@ -1,10 +1,9 @@
 ---
 title: 'AMBROSIA'
 subtitle: 'a modern fantasy'
-preview: 'https://codepen.io/vvvaporwaves/pen/gOeVjPK'
-date: 2022-10-05
+preview: 'https://codepen.io/vvvaporwaves/embed/gOeVjPK'
+date: 2022-08-30
 tags: ['html', 'sass', 'fantasy']
-description: TODO
 ---
 
 Drawing inspiration from aspects and images from Greek mythology and witchcraft - such as gems, flowers and animals - the goal with Ambrosia's design was to create something that evoked a sense of magical fantasy.
