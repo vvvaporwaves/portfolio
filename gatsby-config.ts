@@ -12,6 +12,23 @@ const config: GatsbyConfig = {
   // Learn more at: https://gatsby.dev/graphql-typegen
   graphqlTypegen: true,
   plugins: [
+    {
+      resolve: 'gatsby-plugin-google-gtag',
+      options: {
+        trackingIds: ['G-TODO'],
+        gtagConfig: {
+          anonymize_ip: true,
+          cookie_expires: 0
+        }
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'markdown-pages',
+        path: './src/data/portfolio'
+      }
+    },
     'gatsby-plugin-postcss',
     {
       resolve: `gatsby-plugin-sass`,
@@ -19,6 +36,22 @@ const config: GatsbyConfig = {
         // Configure SASS to process TailwindCSS.
         postCssPlugins: [require('tailwindcss')],
       },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {},
+    },
+    'gatsby-plugin-htaccess',
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: './src/assets/images/'
+      },
+      __key: 'images'
     }
   ],
 }
