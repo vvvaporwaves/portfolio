@@ -6,8 +6,19 @@ module.exports = {
     './src/templates/**/*.{js,jsx,ts,tsx}'
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      serif: ['TAN-BUSTER'],
+      mono: ['Fira Code']
+    },
+    extend: {
+      colors: {
+        pink: '#ec79a9',
+        purple: '#525ba7',
+        black: '#141315',
+        white: '#ebebeb'
+      }
+    }
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 
