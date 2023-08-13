@@ -1,7 +1,8 @@
 ---
 title: 'AMBROSIA'
 subtitle: 'a modern fantasy'
-preview: 'https://codepen.io/vvvaporwaves/embed/gOeVjPK'
+preview-url: 'https://codepen.io/vvvaporwaves/embed/gOeVjPK'
+preview-image: '../../assets/images/ambrosia.png'
 date: 2022-08-30
 tags: ['html', 'sass', 'fantasy']
 ---

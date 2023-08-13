@@ -1,7 +1,8 @@
 ---
 title: 'FIREFLOWER'
 subtitle: 'a 90s shoujo-inspired experience'
-preview: 'https://fireflower.jcink.net'
+preview-url: 'https://fireflower.jcink.net'
+preview-image: '../../assets/images/fireflower.png'
 date: 2020-07-03
 tags: ['html', 'css', 'shoujo']
 ---

@@ -1,7 +1,8 @@
 ---
 title: 'SUMMER DAYS'
 subtitle: 'for summer fun'
-preview: 'https://codepen.io/vvvaporwaves/embed/PoEyqpR'
+preview-url: 'https://codepen.io/vvvaporwaves/embed/PoEyqpR'
+preview-image: '../../assets/images/summerdays.png'
 date: 2022-04-12
 tags: ['html', 'css', 'bootstrap', 'summer']
 ---

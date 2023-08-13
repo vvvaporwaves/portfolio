@@ -1,7 +1,8 @@
 ---
 title: 'WALKER STREET'
 subtitle: 'an urban horror'
-preview: 'https://codepen.io/vvvaporwaves/embed/abjvNmN'
+preview-url: 'https://codepen.io/vvvaporwaves/embed/abjvNmN'
+preview-image: '../../assets/images/walkerstreet.png'
 date: 2021-05-21
 tags: ['html', 'css', 'horror']
 ---

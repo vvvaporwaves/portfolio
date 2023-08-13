@@ -1,7 +1,8 @@
 ---
 title: 'RETRO FUTURE'
 subtitle: 'a sci-fi experience'
-preview: 'https://codepen.io/vvvaporwaves/embed/GRWrYoY'
+preview-url: 'https://codepen.io/vvvaporwaves/embed/GRWrYoY'
+preview-image: '../../assets/images/retrofuture.png'
 date: 2021-05-21
 tags: ['html', 'css', 'sci-fi']
 ---
