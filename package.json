@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "gatsby": "^5.11.0",
-    "gatsby-plugin-google-gtag": "^5.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1"
@@ -28,8 +27,15 @@
     "@types/react-dom": "^18.2.6",
     "autoprefixer": "^10.4.14",
     "daisyui": "^3.5.1",
+    "gatsby-plugin-google-gtag": "^5.11.0",
+    "gatsby-plugin-htaccess": "^1.4.0",
+    "gatsby-plugin-image": "^3.11.0",
     "gatsby-plugin-postcss": "^6.11.0",
     "gatsby-plugin-sass": "^6.11.0",
+    "gatsby-plugin-sharp": "^5.11.0",
+    "gatsby-source-filesystem": "^5.11.0",
+    "gatsby-transformer-remark": "^6.11.0",
+    "gatsby-transformer-sharp": "^5.11.0",
     "postcss": "^8.4.27",
     "sass": "^1.65.1",
     "tailwindcss": "^3.3.3",
