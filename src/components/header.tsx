@@ -12,7 +12,7 @@ const Header = () => {
       <div className="px-6 w-full flex flex-wrap items-center justify-between">
         <div className="flex w-full items-center">
           <ul className='navbar-nav flex text-purple'>
-            <li className='nav-item ml-5'>
+            <li className='nav-item'>
             <Link
                 to="/"
                 className='text-purple'
