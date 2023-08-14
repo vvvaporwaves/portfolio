@@ -6,7 +6,7 @@ import Header from './header';
 
 const Layout = ({ children, location }: PageProps) => {
   return (
-    <div className="relative flex flex-col min-h-screen bg-black text-white">
+    <div className="relative font-mono flex flex-col min-h-screen bg-black text-white">
       <Header />
       <main className="container flex flex-1 mx-auto">
         {children}
