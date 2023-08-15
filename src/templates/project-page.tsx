@@ -24,17 +24,18 @@ const ProjectPage = ({
   pageContext
 }: PageProps<DataProps, ContextProps>) => {
   return (
-    <div className="flex flex-col w-full my-10 mx-6 sm:mx-0 items-center">
+    <div className="flex flex-col w-full my-10 mx-6 lg:mx-0 items-center">
       <div className="flex w-full items-center">
-        <h2 className="text-4xl font-semibold uppercase text-pink text-center font-serif">
+        <h2 className="heading">
           {`${project.frontmatter.title},`}
         </h2>
         <span className="ml-3">{project.frontmatter.subtitle}</span>
       </div>
 
-      <div className="mockup-window border bg-[#EC77A8] mt-4 self-start">
+      <div className="mockup-window border w-full bg-[#EC77A8] mt-4 self-start">
         <div className="bg-[#141315] border-t">
           <iframe
+            className="w-full aspect-video"
             src={project.frontmatter.preview_url}
             title="fireflower"
           ></iframe>
