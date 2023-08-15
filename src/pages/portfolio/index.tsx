@@ -14,7 +14,6 @@ type DataProps = {
 };
 
 const Portfolio = ({ data: { projects } }: PageProps<DataProps>) => {
-  console.log('hi', projects);
   return (
     <div
       className="container grid m-auto grid grid-cols-2 lg:grid-cols-3 gap-4"
