@@ -26,10 +26,10 @@ const ProjectPage = ({
   return (
     <div className="flex flex-col w-full my-10 mx-6 sm:mx-0 items-center">
       <div className="flex w-full items-center">
-        <h2 className="text-4xl font-semibold uppercase text-white text-center">
-          {project.frontmatter.title}
+        <h2 className="text-4xl font-semibold uppercase text-pink text-center font-serif">
+          {`${project.frontmatter.title},`}
         </h2>
-        <span className="h-0.5 flex-1 ml-6 bg-white" />
+        <span className="ml-3">{project.frontmatter.subtitle}</span>
       </div>
 
       <div class="mockup-window border bg-[#EC77A8] mt-4 self-start">
