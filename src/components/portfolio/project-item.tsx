@@ -10,9 +10,9 @@ interface Props {
 
 const ProjectItem = ({ project }: Props) => {
   return (
-    <div>
+    <div className="project-item-container">
       <Link to={`/portfolio/${toKebabCase(project.title)}`}>
-        <span>{project.title}</span>
+        <span className="project-title">{project.title}</span>
 
         <GatsbyImage
           className="w-full rounded-full"
