@@ -14,10 +14,10 @@ const About = () => {
     ];
 
   return (
-    <div className="container grid m-auto items-center h-screen">
-      <div className="pt-12 grid md:grid-cols-[1.5fr_1fr] px-4">
+    <div className="container grid m-auto items-center max-w-[1000px]">
+      <div className="pt-12 grid md:grid-cols-[4fr_1fr] px-4">
         <section>
-          <h1 className='font-serif text-pink'>hi, i'm kat!</h1>
+          <h1 className='heading'>hi, i'm kat!</h1>
           <div className="text-2xl">
             <p>
               i'm a designer based in vancouver, canada who loves {[...'colour'].map((letter, i) => {
@@ -27,7 +27,7 @@ const About = () => {
             <p className="mt-4">
               i'm also a lover of music, collaborative fiction, anime & manga, and the critically acclaimed mmorpg, final fantasy xiv.
             </p>
-            <button className="mt-6">resume</button>
+            <button className="ease-in-out duration-500 mt-4 py-[0.5rem] px-4 border border-white hover:shadow-[inset_6.5em_0_0_0_hsl(234,_34%,_49%)]">resume</button>
           </div>
         </section>
       </div>
