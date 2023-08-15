@@ -32,8 +32,8 @@ const ProjectPage = ({
         <span className="ml-3">{project.frontmatter.subtitle}</span>
       </div>
 
-      <div class="mockup-window border bg-[#EC77A8] mt-4 self-start">
-        <div class="bg-[#141315] border-t">
+      <div className="mockup-window border bg-[#EC77A8] mt-4 self-start">
+        <div className="bg-[#141315] border-t">
           <iframe
             src={project.frontmatter.preview_url}
             title="fireflower"
