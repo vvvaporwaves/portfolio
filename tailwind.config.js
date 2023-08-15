@@ -11,6 +11,11 @@ module.exports = {
       mono: ['Fira Code']
     },
     extend: {
+      container: {
+        screens: {
+          lg: '1000px',
+        },
+      },
       colors: {
         pink: '#ec79a9',
         purple: '#525ba7',
