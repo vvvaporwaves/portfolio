@@ -1,4 +1,4 @@
-import type { GatsbyConfig } from "gatsby"
+import type { GatsbyConfig } from 'gatsby';
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -15,7 +15,7 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
-        trackingIds: ['G-TODO'],
+        trackingIds: ['G-SDH67ECXBW'],
         gtagConfig: {
           anonymize_ip: true,
           cookie_expires: 0
@@ -34,12 +34,12 @@ const config: GatsbyConfig = {
       resolve: `gatsby-plugin-sass`,
       options: {
         // Configure SASS to process TailwindCSS.
-        postCssPlugins: [require('tailwindcss')],
-      },
+        postCssPlugins: [require('tailwindcss')]
+      }
     },
     {
       resolve: `gatsby-transformer-remark`,
-      options: {},
+      options: {}
     },
     'gatsby-plugin-htaccess',
     'gatsby-plugin-image',
@@ -53,7 +53,7 @@ const config: GatsbyConfig = {
       },
       __key: 'images'
     }
-  ],
-}
+  ]
+};
 
-export default config
+export default config;
