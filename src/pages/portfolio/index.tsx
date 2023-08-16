@@ -16,7 +16,7 @@ type DataProps = {
 const Portfolio = ({ data: { projects } }: PageProps<DataProps>) => {
   return (
     <div
-      className="container grid m-auto grid grid-cols-2 lg:grid-cols-3 gap-4"
+      className="container grid m-auto grid px-6 lg:p-0 grid-cols-2 lg:grid-cols-3 gap-4"
       id="gallery"
     >
       {projects.nodes.map((node) => {
