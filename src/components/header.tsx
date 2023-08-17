@@ -11,29 +11,19 @@ const Header = () => {
     <nav className="navbar py-6 relative flex items-center w-full justify-between bg-black">
       <div className="px-6 w-full flex flex-wrap items-center justify-between">
         <div className="flex w-full items-center">
-          <ul className='navbar-nav flex text-purple'>
-            <li className='nav-item'>
-            <Link
-                to="/"
-                className='text-purple'
-                activeClassName="text-pink"
-              >
+          <ul className="navbar-nav flex text-purple">
+            <li className="nav-item">
+              <Link to="/" activeClassName="text-pink">
                 home
               </Link>
             </li>
-            <li className='nav-item ml-5'>
-            <Link
-                to="/about"
-                activeClassName="text-pink"
-              >
+            <li className="nav-item ml-5">
+              <Link to="/about" activeClassName="text-pink">
                 about
               </Link>
             </li>
-            <li className='nav-item ml-5'>
-            <Link
-                to="/portfolio"
-                activeClassName="text-pink"
-              >
+            <li className="nav-item ml-5">
+              <Link to="/portfolio" activeClassName="text-pink">
                 portfolio
               </Link>
             </li>
