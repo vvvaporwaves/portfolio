@@ -5,7 +5,7 @@ import SEO from '../components/seo';
 
 const Home = () => {
   return (
-    <div className="container max-w-[1000px] m-auto text-center flex content-center">
+    <div className="container p-6 md:p-0 max-w-[1000px] m-auto text-center flex content-center">
       <div className="grid w-full aspect-square place-self-center">
         <div className="row-start-1 col-start-1 col-end-2 row-end-2 round-border relative z-40 rb-1">
           <div>
@@ -102,7 +102,7 @@ const Home = () => {
           </div>
         </div>
 
-        <h1 className="body col-start-1 col-end-2 z-5 relative row-start-1 row-end-2 place-self-center w-[35%] break-all p-[2rem_1rem_0rem] heading">
+        <h1 className="body col-start-1 col-end-2 z-5 relative row-start-1 row-end-2 place-self-center w-[35%] break-all p-[1rem_1rem_0rem] md:p-[2rem_1rem_0rem] heading">
           vaporwaves
         </h1>
       </div>
