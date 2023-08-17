@@ -1,7 +1,7 @@
 ---
 title: 'ASTONISH'
 subtitle: 'a fantasy experience'
-preview-url: 'https://astonish.jcink.net'
+preview-url: 'https://codepen.io/vvvaporwaves/embed/GRGaJPO'
 preview-image: '../../assets/images/astonish.png'
 date: 2022-12-11
 tags: ['html', 'sass', 'tailwind', 'fantasy']
