@@ -15,7 +15,7 @@ const About = () => {
 
   return (
     <div className="container px-6 lg:p-0 grid m-auto items-center max-w-[1000px]">
-      <div className="pt-12 grid md:grid-cols-[4fr_1fr] px-4">
+      <div className="py-12 grid md:grid-cols-[4fr_1fr] px-4">
         <section>
           <h1 className="heading">hi, i'm kat!</h1>
           <div className="text-2xl">
