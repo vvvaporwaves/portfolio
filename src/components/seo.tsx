@@ -43,7 +43,9 @@ const SEO = ({ title, description, pathname, children }: Props) => {
       <meta name="twitter:url" content={seo.url} />
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       <link rel="icon" href="icon.svg" />
+      
       {children}
     </>
   );
