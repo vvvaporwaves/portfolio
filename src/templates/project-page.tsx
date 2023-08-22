@@ -26,9 +26,7 @@ const ProjectPage = ({
   return (
     <div className="flex flex-col w-full my-10 mx-6 lg:mx-0 items-center">
       <div className="flex w-full items-center">
-        <h2 className="heading">
-          {`${project.frontmatter.title},`}
-        </h2>
+        <h2 className="heading">{`${project.frontmatter.title},`}</h2>
         <span className="ml-3">{project.frontmatter.subtitle}</span>
       </div>
 
@@ -43,7 +41,7 @@ const ProjectPage = ({
       </div>
 
       <article
-        className="flex w-full flex-col blog-post text-white gap-3 my-10"
+        className="flex w-full flex-col project-post text-white gap-3 my-10"
         style={{ maxWidth: 1000 }}
         dangerouslySetInnerHTML={{ __html: project.html }}
       />
