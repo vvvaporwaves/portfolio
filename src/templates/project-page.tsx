@@ -33,7 +33,7 @@ const ProjectPage = ({
       <div className="mockup-window border w-full bg-[#EC77A8] mt-4 self-start">
         <div className="bg-[#141315] border-t">
           <iframe
-            className="w-full aspect-video"
+            className="w-full h-[500px] lg:h-auto lg:aspect-video"
             src={project.frontmatter.preview_url}
             title="fireflower"
           ></iframe>
