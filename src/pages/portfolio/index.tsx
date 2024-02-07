@@ -3,7 +3,11 @@ import { graphql, PageProps, type HeadFC } from 'gatsby';
 
 import SEO from '../../components/seo';
 import Project from '../../models/Project';
-import ProjectItem from '../../components/portfolio/project-item';
+import ProjectItem, {
+  ProjectSize
+} from '../../components/portfolio/project-item';
+
+const RECENT_WORK_SIZE = 3;
 
 type DataProps = {
   projects: {
@@ -14,14 +18,48 @@ type DataProps = {
 };
 
 const Portfolio = ({ data: { projects } }: PageProps<DataProps>) => {
+  const [newProjects, prevProjects] = [
+    projects.nodes.slice(0, RECENT_WORK_SIZE),
+    projects.nodes.slice(RECENT_WORK_SIZE)
+  ];
+
   return (
-    <div
-      className="container grid m-auto grid px-6 lg:p-0 grid-cols-2 lg:grid-cols-3 gap-4"
-      id="gallery"
-    >
-      {projects.nodes.map((node) => {
-        return <ProjectItem project={node.frontmatter} />;
-      })}
+    <div className="container px-6 lg:p-0">
+      <div className="pb-6">
+        <h2 className="text-3xl lg:text-4xl font-semibold">Recent Projects</h2>
+        <div
+          className="grid grid-cols-2 lg:grid-cols-3 gap-4 my-6"
+          id="gallery"
+        >
+          {newProjects.map((node) => {
+            return (
+              <ProjectItem
+                project={node.frontmatter}
+                size={ProjectSize.Large}
+              />
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="pt-6">
+        <h2 className="text-3xl lg:text-4xl font-semibold">
+          Previous Projects
+        </h2>
+        <div
+          className="grid grid-cols-2 lg:grid-cols-5 gap-4 my-6"
+          id="gallery"
+        >
+          {prevProjects.map((node) => {
+            return (
+              <ProjectItem
+                project={node.frontmatter}
+                size={ProjectSize.Small}
+              />
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 };
