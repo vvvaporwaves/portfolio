@@ -35,7 +35,8 @@ const ProjectPage = ({
           <iframe
             className="w-full h-[500px] lg:h-auto lg:aspect-video"
             src={project.frontmatter.preview_url}
-            title="fireflower"
+            title={project.frontmatter.title}
+            allowFullScreen={true}
           ></iframe>
         </div>
       </div>
