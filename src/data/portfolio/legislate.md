@@ -60,7 +60,7 @@ For me, based off the interviews I did, looked like this:
 ### Architecture
 
 <figure class="one-img">
-<img src="https://i.postimg.cc/SmjdYrKv/information-architecture.png" alt="Rough outline for information architecture of Legislate . me" />
+<img src="images/legislate-me/information-architecture.png" alt="Rough outline for information architecture of Legislate . me" />
 <figcaption> The development of legsislate.me's information architecture</figcaption>
 </figure>
 
@@ -71,18 +71,18 @@ Before the wireframing process and with the app requirements in mind, I laid out
 With the architecture laid out, it became easier to visualise the user's journey, and helped kickstart the iteration process for the screen designs. For each screen, I aimed to roughly create 6 to 8 different iterations of each screen. 
 
 <figure class="five-img">
-<img src="https://i.postimg.cc/ZbPxzsfC/home-page.png" alt="Home wireframe">
-<img src="https://i.postimg.cc/syyJ4yXS/browse-page.png" alt="Browse wireframe">
-<img src="https://i.postimg.cc/38QF6QFs/following-page.png" alt="Following wireframe">
-<img src="https://i.postimg.cc/093fYwM2/bill-page.png" alt="Bill wireframe">
-<img src="https://i.postimg.cc/HpytBkX0/terms-dictionary.png" alt="Terms & dictionary wireframe">
+<img src="/images/legislate-me/home-page.png" alt="Home wireframe">
+<img src="/images/legislate-me/browse-page.png" alt="Browse wireframe">
+<img src="/images/legislate-me/following-page.png" alt="Following wireframe">
+<img src="/images/legislate-me/bill-page.png" alt="Bill wireframe">
+<img src="/images/legislate-me/terms-dictionary.png" alt="Terms & dictionary wireframe">
 <figcaption>From top left to right: home, browse, following, bill page, terms & dictonary</figcaption>
 </figure>
 
 Once this process was complete, I picked out parts I liked and laid out cohesive design that I would then take into Figma to refine into a Lo-Fi wireframe and prototype.
 
 <figure class="one-img">
-<img src="https://i.postimg.cc/G2nFzT19/overall-layout.png" alt="Chosen layouts for each screen"/>
+<img src="/images/legislate-me/overall-layout.png" alt="Chosen layouts for each screen"/>
 <figcaption>The chosen layouts for each screen</figcaption>
 </figure>
 
@@ -91,12 +91,12 @@ Once this process was complete, I picked out parts I liked and laid out cohesive
 From here, I took the design into Figma, and recreated first as a wireframe, and then as a low fidelity mock up. 
 
 <figure class="one-img">
-<img src="https://i.postimg.cc/8k5JXZx8/legislate-me.png" alt="Digital wireframe"/>
+<img src="/images/legislate-me/digital-wireframe.png" alt="Digital wireframe"/>
 <figcaption>Digital wireframe</figcaption>
 </figure>
 
 <figure class="one-img">
-<img src="https://i.postimg.cc/qJQ6GPbX/legislate-me-2.png" alt="Low fidelity mock-up"/>
+<img src="/images/legislate-me/low-fidelity.png" alt="Low fidelity mock-up"/>
 <figcaption>Low fidelity mock-up</figcaption>
 </figure>
 

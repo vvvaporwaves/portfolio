@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { graphql, PageProps, type HeadFC } from 'gatsby';
 
 import SEO from '../../components/seo';
-import Project from '../../models/Project';
+import Project from '../../models/project';
 import ProjectItem, {
   ProjectSize
 } from '../../components/portfolio/project-item';
@@ -55,6 +55,7 @@ const Portfolio = ({ data: { projects } }: PageProps<DataProps>) => {
               <ProjectItem
                 project={node.frontmatter}
                 size={ProjectSize.Small}
+                key={node.frontmatter.title}
               />
             );
           })}
