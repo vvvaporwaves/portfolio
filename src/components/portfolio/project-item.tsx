@@ -1,18 +1,30 @@
 import React from 'react';
-import Project from '../../models/Project';
+import Project from '../../models/project';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import { toKebabCase } from '../../utils';
 
-interface Props {
-  project: Project;
+export enum ProjectSize {
+  Small = 'Small',
+  Large = 'Large'
 }
 
-const ProjectItem = ({ project }: Props) => {
+interface Props {
+  project: Project;
+  size: ProjectSize;
+}
+
+const ProjectItem = ({ project, size }: Props) => {
   return (
     <div className="project-item-container">
       <Link to={`/portfolio/${toKebabCase(project.title)}`}>
-        <span className="project-title">{project.title}</span>
+        <span
+          className={
+            size === ProjectSize.Large ? 'project-title' : 'project-title-small'
+          }
+        >
+          {project.title}
+        </span>
 
         <GatsbyImage
           className="w-full rounded-full"
