@@ -25,7 +25,7 @@ const ProjectPage = ({
 }: PageProps<DataProps, ContextProps>) => {
   return (
     <div className="flex flex-col w-full my-10 mx-6 lg:mx-0 items-center">
-      <div className="flex w-full items-center">
+      <div className="flex w-full items-center flex-wrap">
         <h2 className="heading">{`${project.frontmatter.title},`}</h2>
         <span className="ml-3">{project.frontmatter.subtitle}</span>
       </div>
