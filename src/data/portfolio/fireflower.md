@@ -12,8 +12,8 @@ The design for FIRE✽FLOWER was heavily inspired Memphis design, which was popu
 With this in mind, I also wanted to create a template for the site that differed from the previous design. Therefore, I chose to go for a brighter colour scheme, but still keep things such as navigation, icons, and the general layout of the design similar to the previous one. This variety in design also allowed for users to have a little more freedom to pick which template suited their own visual needs, to a degree.
 
 <figure>
-    <img src="https://i.imgur.com/PcqzzXW.png" alt="image of a website designed with light gray and purples" />
-    <img src="https://i.imgur.com/uePuDrt.png" alt="image of a website designed with bright colours" />
+    <img src="./assets/images/fireflower/fireflower-old.png" alt="image of a website designed with light gray and purples" />
+    <img src="./assets/images/fireflower/fireflower-old-2.png" alt="image of a website designed with bright colours" />
     <figcaption>Fig - Visual Comparison between FIREFLOWER'S template designs</figcaption>
 </figure>
 
