@@ -48,7 +48,7 @@ const Menu = ({ isOpen, setOpen }: Props) => {
               activeClassName="text-pink"
               onClick={() => setOpen(false)}
             >
-              home
+              portfolio
             </Link>
           </li>
           <li>
@@ -59,17 +59,6 @@ const Menu = ({ isOpen, setOpen }: Props) => {
               onClick={() => setOpen(false)}
             >
               about
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/portfolio"
-              className="flex items-center p-2 rounded-lg nav-item"
-              activeClassName="text-pink"
-              partiallyActive={true}
-              onClick={() => setOpen(false)}
-            >
-              portfolio
             </Link>
           </li>
         </ul>

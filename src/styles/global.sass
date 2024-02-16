@@ -51,8 +51,12 @@
             @apply text-purple font-bold duration-500
             &:hover
                 @apply brightness-150 duration-500
+            button
+                @apply font-normal text-white text-2xl
+                &:hover
+                    @apply text-white brightness-100 shadow-[inset_10em_0_0_0_hsl(234,_34%,_49%)]
         figure
-            @apply grid gap-2 lg:grid-cols-2
+            @apply grid gap-2 lg:grid-cols-2 my-5
         figure.one-img
             @apply block
         figure.five-img
@@ -66,7 +70,7 @@
             li
                 @apply list-decimal
         ul
-            @apply px-12
+            @apply px-12 mt-1 mb-3
             li
                 @apply list-disc
         h2
@@ -77,3 +81,20 @@
             @apply italic font-bold
         h5
             @apply font-bold text-xl
+        .table-container
+            @apply p-7 bg-gray-500/25 rounded my-3 grid items-start text-left
+            th
+                @apply break-all
+
+        .section-container
+            @apply pt-5 pb-8 bg-gray-500/25 my-5 p-5
+            .section
+                @apply p-0
+                h5
+                    @apply font-bold text-xl border-l pl-5 border-pink mx-5
+        .section
+            @apply max-w-1000 mx-auto px-5 lg:px-0
+            h2
+                @apply mb-4
+            p
+                @apply py-2

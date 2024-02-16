@@ -13,8 +13,11 @@ module.exports = {
     extend: {
       container: {
         screens: {
-          lg: '1000px',
-        },
+          lg: '100%'
+        }
+      },
+      maxWidth: {
+        1000: '1000px'
       },
       colors: {
         pink: '#ec79a9',
@@ -24,6 +27,5 @@ module.exports = {
       }
     }
   },
-  plugins: [require("daisyui")],
-}
-
+  plugins: [require('daisyui')]
+};
