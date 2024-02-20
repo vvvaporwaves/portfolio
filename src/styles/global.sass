@@ -51,29 +51,98 @@
             @apply text-purple font-bold duration-500
             &:hover
                 @apply brightness-150 duration-500
+            button
+                @apply font-normal text-white text-2xl
+                &:hover
+                    @apply text-white brightness-100 shadow-[inset_10em_0_0_0_hsl(234,_34%,_49%)]
         figure
-            @apply grid gap-2 lg:grid-cols-2
-        figure.one-img
-            @apply block
-        figure.five-img
-            @apply block lg:grid lg:grid-cols-2
-            img:last-of-type
-                @apply col-span-2
+            @apply grid gap-2 lg:grid-cols-2 my-5
+            &.one-img
+                @apply block
+            &.five-img
+                @apply block lg:grid lg:grid-cols-2
+                img:last-of-type
+                    @apply col-span-2
+            img
+                @apply mx-auto
         figcaption
-            @apply lg:col-span-2 text-center italic
+            @apply lg:col-span-2 text-center italic mt-2
         ol
             @apply px-12
             li
                 @apply list-decimal
         ul
-            @apply px-12
+            @apply px-12 mt-1 mb-3
             li
                 @apply list-disc
         h2
             @apply font-bold italic text-3xl border-b-2 border-pink border-solid w-fit mt-4
         h3
-            @apply uppercase font-bold text-pink text-xl
+            @apply uppercase font-bold text-pink text-xl mt-3
         h4
             @apply italic font-bold
         h5
             @apply font-bold text-xl
+        .table-container
+            @apply p-7 bg-gray-500/25 rounded my-3 grid items-start text-left
+            th
+                @apply break-all
+
+        .section-container
+            @apply pt-5 pb-8 bg-gray-500/25 my-5 p-5
+            .section
+                @apply p-0
+                h5
+                    @apply font-bold text-xl border-l pl-5 border-pink mx-5 mb-2
+        .section
+            @apply max-w-1000 mx-auto px-5 lg:px-0
+            h2
+                @apply mb-4
+            p
+                @apply py-2
+
+        .table-container
+            @apply overflow-auto
+            table 
+                tr
+                    @apply grid grid-cols-[repeat(9,210px)]  w-screen lg:w-auto
+                    td:not(:first-of-type)
+                        @apply justify-center
+                    td
+                        @apply flex items-center border-b py-3
+                > thead
+                    > tr:first-of-type
+                        @apply bg-transparent border-b p-1
+                        th
+                            @apply flex justify-center
+
+        .design-system
+            @apply lg:grid lg:grid-cols-[20%_80%] gap-5 mt-2
+            > div:nth-child(odd)
+                @apply border-b p-5 my-3 uppercase lg:p-0 lg:my-0 lg:border-b-0 lg:border-r border-white
+            h3
+                @apply mt-0
+
+        #legislate-me.design-system
+            div[class*="h"]
+                @apply font-inter
+            .h1
+                @apply font-black text-[35px]
+            .h2
+                @apply font-black text-[25px]
+            .h4
+                @apply font-bold text-[22px]
+            .h3
+                @apply font-bold text-[24px]
+
+        hr
+            @apply border-pink border mt-10 mb-16 w-1/2 mx-auto
+        
+        .user-persona 
+            @apply mt-5
+            &.virgil
+                @apply grid lg:grid-cols-[75%_25%]
+                figure
+                    @apply lg:col-start-2 lg:row-start-1 lg:row-end-4 mt-0
+                    img
+                        @apply rounded-full

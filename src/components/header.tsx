@@ -40,21 +40,12 @@ const Header = () => {
           <ul className="navbar-nav text-purple hidden md:flex">
             <li className="nav-item">
               <Link to="/" activeClassName="text-pink">
-                home
+                portfolio
               </Link>
             </li>
             <li className="nav-item ml-5">
               <Link to="/about" activeClassName="text-pink">
                 about
-              </Link>
-            </li>
-            <li className="nav-item ml-5">
-              <Link
-                to="/portfolio"
-                partiallyActive={true}
-                activeClassName="text-pink"
-              >
-                portfolio
               </Link>
             </li>
           </ul>

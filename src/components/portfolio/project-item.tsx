@@ -27,7 +27,7 @@ const ProjectItem = ({ project, size }: Props) => {
         </span>
 
         <GatsbyImage
-          className="w-full rounded-full"
+          className="w-full rounded-full aspect-square"
           alt={project.title}
           image={project.preview_image.childImageSharp.gatsbyImageData}
         />
