@@ -3,12 +3,15 @@ module.exports = {
   content: [
     './src/pages/**/*.{js,jsx,ts,tsx}',
     './src/components/**/*.{js,jsx,ts,tsx}',
-    './src/templates/**/*.{js,jsx,ts,tsx}'
+    './src/templates/**/*.{js,jsx,ts,tsx}',
+    './src/data/**/*.{md,mdx}'
   ],
   theme: {
     fontFamily: {
       serif: ['TAN-BUSTER'],
-      mono: ['Fira Code']
+      mono: ['Fira Code'],
+      inter: ['Inter'],
+      courier: ['Courier Prime']
     },
     extend: {
       container: {
