@@ -2,7 +2,7 @@
 title: 'ASTONISH'
 subtitle: 'A responsive, fantasy-based website experience for a collaborative writing community.'
 preview-url: 'https://codepen.io/vvvaporwaves/embed/GRGaJPO'
-preview-image: '../../assets/images/astonish.png'
+preview-image: '../../assets/images/astonish-header.png'
 banner-image: '../../assets/images/astonish-header.png'
 date: 2022-12-11
 tags: ['html', 'sass', 'tailwind', 'fantasy']
