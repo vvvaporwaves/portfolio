@@ -322,9 +322,9 @@ By removing these short summaries, this also help to lessen tightness and crowde
 
 <br>
 
-### Design System
+### Style Guide
 
-With these changes made, I decided to give myself practice in the creation of a design system by going back and gathering all the materials I used to create this version of legislate.me.
+With these changes made, I decided to give myself practice in the creation of a style guide by going back and gathering all the materials I used to create this version of legislate.me.
 
 <br>
 
