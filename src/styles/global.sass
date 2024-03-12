@@ -57,6 +57,10 @@
                     @apply text-white brightness-100 shadow-[inset_10em_0_0_0_hsl(234,_34%,_49%)]
         figure
             @apply grid gap-2 lg:grid-cols-2 my-5
+            &.wide-img
+                @apply lg:grid-cols-1
+                figcaption
+                    @apply lg:col-span-1
             &.one-img
                 @apply block
             &.five-img
@@ -103,9 +107,17 @@
 
         .table-container
             @apply overflow-auto
+            &.legislate
+                table 
+                    tr 
+                        @apply grid-cols-[repeat(9,210px)]
+            &.astonish
+                table
+                    tr
+                        @apply grid-cols-[repeat(6,210px)]
             table 
                 tr
-                    @apply grid grid-cols-[repeat(9,210px)]  w-screen lg:w-auto
+                    @apply grid w-screen lg:w-auto
                     td:not(:first-of-type)
                         @apply justify-center
                     td

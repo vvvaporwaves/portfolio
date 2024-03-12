@@ -41,7 +41,7 @@ Often, they offer services that include AI generated summaries mixed with advice
 
 On the other hand, while there are many free-to-use summarization tools online, and even AI-backed ones such as ChatGPT, they are often plagued with character limits, or require users to copy and paste text directly into their text boxes to start the summarization process.
 
-<div class="table-container">
+<div class="table-container legislate">
 
 <table>
 <thead><tr>
