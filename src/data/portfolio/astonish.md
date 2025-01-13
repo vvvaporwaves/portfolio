@@ -18,7 +18,7 @@ tags: ['html', 'sass', 'tailwind', 'fantasy']
 
 <div>
 
-**<span class="text-pink">DURATION:</span>** May 2023 - Nov. 2024 (6 Months)</div>
+**<span class="text-pink">DURATION:</span>** May 2024 - Nov. 2024 (6 Months)</div>
 
 </div>
 </div>
