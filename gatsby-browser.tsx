@@ -1,7 +1,7 @@
 import * as React from 'react';
 import type { GatsbyBrowser } from 'gatsby';
 
-import './src/styles/global.sass';
+import './src/styles/global.scss';
 import Layout from './src/components/layout';
 
 export const wrapPageElement: GatsbyBrowser['wrapPageElement'] = ({
