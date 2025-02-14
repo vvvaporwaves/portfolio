@@ -70,9 +70,7 @@ const Portfolio = ({ data: { projects } }: PageProps<DataProps>) => {
 
 export const pageQuery = graphql`
   query {
-    projects: allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-    ) {
+    projects: allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       nodes {
         frontmatter {
           title
