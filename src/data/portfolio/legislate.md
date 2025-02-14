@@ -41,7 +41,7 @@ Often, they offer services that include AI generated summaries mixed with advice
 
 On the other hand, while there are many free-to-use summarization tools online, and even AI-backed ones such as ChatGPT, they are often plagued with character limits, or require users to copy and paste text directly into their text boxes to start the summarization process.
 
-<div class="table-container">
+<div class="table-container legislate">
 
 <table>
 <thead><tr>
@@ -322,9 +322,9 @@ By removing these short summaries, this also help to lessen tightness and crowde
 
 <br>
 
-### Design System
+### Style Guide
 
-With these changes made, I decided to give myself practice in the creation of a design system by going back and gathering all the materials I used to create this version of legislate.me.
+With these changes made, I decided to give myself practice in the creation of a style guide by going back and gathering all the materials I used to create this version of legislate.me.
 
 <br>
 
