@@ -3,7 +3,10 @@ import { graphql, PageProps, type HeadFC } from 'gatsby';
 
 import SEO from '../components/seo';
 import Project from '../models/project';
-import ProjectItem, { ProjectSize } from '../components/portfolio/project-item';
+import ProjectItem, {
+  ProjectSize,
+  ProjectType
+} from '../components/portfolio/project-item';
 
 const RECENT_WORK_SIZE = 3;
 
@@ -43,6 +46,7 @@ const Portfolio = ({ data: { projects } }: PageProps<DataProps>) => {
               <ProjectItem
                 project={node.frontmatter}
                 size={ProjectSize.Large}
+                type={ProjectType.UI_UX}
               />
             );
           })}
@@ -59,6 +63,7 @@ const Portfolio = ({ data: { projects } }: PageProps<DataProps>) => {
               <ProjectItem
                 project={node.frontmatter}
                 size={ProjectSize.Small}
+                type={ProjectType.UI_UX}
               />
             );
           })}
@@ -70,7 +75,10 @@ const Portfolio = ({ data: { projects } }: PageProps<DataProps>) => {
 
 export const pageQuery = graphql`
   query {
-    projects: allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
+    projects: allMarkdownRemark(
+      sort: { frontmatter: { date: DESC } }
+      filter: { fileAbsolutePath: { regex: "/src/data/ui-ux/" } }
+    ) {
       nodes {
         frontmatter {
           title
@@ -80,7 +88,11 @@ export const pageQuery = graphql`
           preview_url
           preview_image {
             childImageSharp {
-              gatsbyImageData(placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+              gatsbyImageData(
+                placeholder: BLURRED
+                formats: [AUTO, WEBP, AVIF]
+                aspectRatio: 1
+              )
             }
           }
         }
