@@ -5,19 +5,30 @@ import { Link } from 'gatsby';
 import { toKebabCase } from '../../utils';
 
 export enum ProjectSize {
-  Small = 'Small',
-  Large = 'Large'
+  Small,
+  Large
+}
+
+export enum ProjectType {
+  UI_UX,
+  THREE_D
 }
 
 interface Props {
   project: Project;
   size: ProjectSize;
+  type: ProjectType;
 }
 
-const ProjectItem = ({ project, size }: Props) => {
+const ProjectItem = ({ project, size, type }: Props) => {
+  const baseUrls: Record<ProjectType, string> = {
+    [ProjectType.UI_UX]: 'portfolio',
+    [ProjectType.THREE_D]: '3d'
+  };
+
   return (
     <div className="project-item-container">
-      <Link to={`/portfolio/${toKebabCase(project.title)}`}>
+      <Link to={`/${baseUrls[type]}/${toKebabCase(project.title)}`}>
         <span
           className={
             size === ProjectSize.Large ? 'project-title' : 'project-title-small'

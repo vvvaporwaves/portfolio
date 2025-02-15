@@ -44,6 +44,11 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item ml-5">
+              <Link to="/3d" activeClassName="text-pink" partiallyActive={true}>
+                3d
+              </Link>
+            </li>
+            <li className="nav-item ml-5">
               <Link to="/about" activeClassName="text-pink">
                 about
               </Link>
