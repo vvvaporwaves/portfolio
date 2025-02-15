@@ -25,8 +25,22 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'markdown-pages',
-        path: './src/data/portfolio'
+        name: 'ui-ux-pages',
+        path: './src/data/ui-ux'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: '3d-pages',
+        path: './src/data/3d'
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: '3d-assets',
+        path: './src/assets/3d'
       }
     },
     'gatsby-plugin-postcss',
